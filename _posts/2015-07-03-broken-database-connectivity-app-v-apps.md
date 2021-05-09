@@ -98,4 +98,4 @@ Then I added this to DeploymentConfig.xml under an AddPackage trigger:
 </MachineScripts>
 {% endhighlight %}
 
-I did not add a RemovePackage equivalent to undo the change just in case there ended up being multiple apps requiring this fix then removing one could break the others. But if you want to implement it, the function to do so it right there in the vbscript. Changing this key affects all packages on the client however. So, unless you can find a package that contains and requires entries under the WinSock2 key, which I have not yet come across, then this should be safe to apply - but of course use this at your own risk!
+I did not add a RemovePackage equivalent to undo the change, just in case there ended up being multiple apps requiring this fix, as then removing one could break the others. But if you want to implement it, the function to do so it right there in the vbscript. Note that changing this key affects **all** packages on the client. So, unless you can find a package that contains and requires entries under the WinSock2 key, which I have never come across, then this should be safe to apply - but of course use this at your own risk!
