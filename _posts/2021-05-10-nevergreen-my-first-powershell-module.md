@@ -49,6 +49,7 @@ Combine both commands to get all results!
 Find-NevergreenApp | Get-NevergreenApp
 {% endhighlight %}
 
+
 [View the module on the Powershell Gallery](https://www.powershellgallery.com/packages/Nevergreen)
 
-[View the respository on Github](https://github.com/DanGough/Nevergreen)
+[View the repository on Github](https://github.com/DanGough/Nevergreen)
