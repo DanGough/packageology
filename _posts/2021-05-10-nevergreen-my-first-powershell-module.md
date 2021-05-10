@@ -10,13 +10,12 @@ tags:
   - Powershell
 ---
 
-Nevergreen is a Powershell module that returns the latest version and download links for various Windows applications.
-
-It can be used as an alternative to Aaron Parker's (and others) excellent [Evergreen](https://stealthpuppy.com/Evergreen/index.html) module, for apps that project does not support, or where it might not return the results you want. Evergreen uses API queries to obtain its data whereas this module is more focussed on web scraping. This is inherently more prone to breaking when websites are changed, hence the name!
-
-You can use both modules together in your own automated application packaging / deployment / image creation workflows!
+Nevergreen is a Powershell module that returns the latest version and download links for various Windows applications. It can be used as an alternative to Aaron Parker's (and others) excellent [Evergreen](https://stealthpuppy.com/Evergreen/index.html) module.
 
 <!--More-->
+Evergreen uses API queries to obtain its data whereas this module is more focussed on web scraping. This is inherently more prone to breaking when websites are changed, hence the name! The Evergreen project wants to avoid web scraping wherever possible, so this is a home for all those other apps where there is no other option. Expect frequent breakages - if you do come across issues, contact me or create an issue on Github, or if you're feeling up to it, fix it yourself and create a pull request!
+
+This has been designed to complement, rather than compete with Evergreen - it uses a similar syntax so that you can use both modules together in your own automated application packaging / deployment / image creation workflows!
 
 ## Installation
 To install the module from the Powershell Gallery:
