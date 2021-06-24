@@ -35,6 +35,8 @@ Other areas of concern that we'll just have to wait to find out more about:
 - Could this eventually integrate with Winget? Application vendors would have to use two separate processes for submitting their apps to both systems.
 - Unlike the relatively safe world of modern containerised MSIX packages, these installers can execute arbitrary code, so there exists the possibility of malware to sneak in. Anyone could submit a tainted version of a popular application, so I hope Microsoft are on the ball here.
 
+Another thing that has tended to slip under most people's radar is that this new Store and these capabilities will also make it to Windows 10! Great news for those with older devices like me that won't even support Windows 11 (run [this](https://aka.ms/GetPCHealthCheckApp) to find out if your device is supported)!
+
 Overall though, this is very good news for Windows and home users in general. The main reason the Store has such as lack of quality content was that developers were forced to repackage as AppX or MSIX which has proven to be a struggle for many. If the vendors all jump on board it could become the go-to place for many to search for and install their applications. However there doesn't seem to be much thought put towards the needs of the enterprise so far, so it may not have much effect on enterprise software deployment for a while yet.
 
 Learn more at: [https://aka.ms/newstore](https://aka.ms/newstore)
