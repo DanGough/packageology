@@ -29,4 +29,10 @@ These support dates apply to the following products:
 * Application Virtualization 5.1 for Windows Desktops
 * Application Virtualization Hosting 5.1 for Windows Desktops
 
-The App-V Client built into Windows 10 / Windows Server is not 5.1 and therefore has no end of support date announced yet.
+The App-V Client built into Windows 10/11 / Windows Server is 10.x+ and not 5.1, so therefore has no end of support date announced yet. Expect it to be supported for the lifetime of the OS, according to OG Microsoft App-V support engineer Sebastian Gernert:
+
+‪[https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/support-lifecycle-app-v-and-the-msix-confusion/ba-p/363574‬](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/support-lifecycle-app-v-and-the-msix-confusion/ba-p/363574)
+
+‪Then again Microsoft are currently stating here that support for 5.1 ends in 2023, after which you'll need to upgrade to a supported version such as 5.0 SP3! 🤦‍ [(Reported!)](https://github.com/MicrosoftDocs/mdop-docs/issues/17)♂️‬
+
+‪[https://learn.microsoft.com/en-us/microsoft-desktop-optimization-pack/appv-v5](https://learn.microsoft.com/en-us/microsoft-desktop-optimization-pack/appv-v5)
