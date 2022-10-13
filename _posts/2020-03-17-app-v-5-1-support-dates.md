@@ -33,6 +33,6 @@ The App-V Client built into Windows 10/11 / Windows Server is 10.x+ and not 5.1,
 
 ‪[https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/support-lifecycle-app-v-and-the-msix-confusion/ba-p/363574‬](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/support-lifecycle-app-v-and-the-msix-confusion/ba-p/363574)
 
-‪Then again Microsoft are currently stating here that support for 5.1 ends in 2023, after which you'll need to upgrade to a supported version such as 5.0 SP3! 🤦‍ [(Reported!)](https://github.com/MicrosoftDocs/mdop-docs/issues/17)♂️‬
+‪Then again Microsoft are currently stating here that support for 5.1 ends in 2023, after which you'll need to upgrade to a supported version such as 5.0 SP3! 🤦‍ [(Reported!)](https://github.com/MicrosoftDocs/mdop-docs/issues/17)‬
 
 ‪[https://learn.microsoft.com/en-us/microsoft-desktop-optimization-pack/appv-v5](https://learn.microsoft.com/en-us/microsoft-desktop-optimization-pack/appv-v5)
