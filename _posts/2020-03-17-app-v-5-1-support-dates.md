@@ -38,4 +38,5 @@ The App-V Client built into Windows 10/11 / Windows Server is 10.x+ and not 5.1,
 Further reading:
 
 [Tim Mangan - About Microsoft App-V End of Life](https://www.tmurgent.com/TmBlog/?p=3560)
+
 [Andreas Nick - No, App-V is not EOL in April 2026](https://www.andreasnick.com/114-app-v-is-not-eol-in-april-2026.html)
