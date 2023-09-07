@@ -63,7 +63,7 @@ author:
   avatar           : "/assets/images/bio-photo.jpg"
   bio              : " "
   location         : #"United Kingdom"
-  email            : ""
+  email            : #""
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
