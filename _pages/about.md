@@ -8,7 +8,7 @@ classes: wide
 
 I work for [Oriium](https://www.oriium.com/apps/) (formerly add3) in the UK.
 
-If you need my help with any of the following services [get in touch](mailto:{{ site.author.email }})!
+Feel free to reach out to me if you require any assistance with:
 
 * Application repackaging for enterprise - MSI, MSIX, App-V
 * Consultancy and training in MSI, MSIX, App-V
