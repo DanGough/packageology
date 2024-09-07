@@ -56,7 +56,7 @@ I consider these bugs, resulting in the following issues:
 If you have an application that is suffering from this problem, the workaround is to put a manifest next to the executable configured to use a suitable execution level:
 
 * **requireAdministrator** - use this if your intended users have admin rights and you want to pop up a UAC prompt.
-* **asInvoker** - this will not produce a UAC prompt - users will be able to write to HKLM since App-V allows this, but if you want the app to write to protected file system areas you will have to use my [pre-launch script]({% post_url 2013-06-22-file-permissions-app-v-5 %}) method to apply permissions to the VFS.
+* **asInvoker** - this will not produce a UAC prompt - users will be able to write to HKLM since App-V allows this, but if you want the app to write to protected file system areas you will have to use my [pre-launch script]({{ site.baseurl }}{% post_url 2013-06-22-file-permissions-app-v-5 %}) method to apply permissions to the VFS.
 
 For example, for an app named **Test.exe**, put this in a text file named **Test.exe.manifest** in the same folder:
 

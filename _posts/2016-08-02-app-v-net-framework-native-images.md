@@ -16,7 +16,7 @@ Assemblies written using the .NET Framework aren't compiled directly to machine 
 
 The .NET Framework has a background service that compiles some of these assemblies to pure machine code (referred to as 'native images') to increase performance. By default it usually just processes the components belonging to the .NET Framework, but application installers can also add some of their own components to the queue. Myself and Tim Mangan have referenced this in the past, here's a few related posts:
 
-[{{ site.url }}{{ site.baseurl }}{% post_url 2012-09-24-fix-net-applications-broken-app-v-security-updates %}]({% post_url 2012-09-24-fix-net-applications-broken-app-v-security-updates %})
+[{{ site.url }}{{ site.baseurl }}{% post_url 2012-09-24-fix-net-applications-broken-app-v-security-updates %}]({{ site.baseurl }}{% post_url 2012-09-24-fix-net-applications-broken-app-v-security-updates %})
 
 [http://www.tmurgent.com/TmBlog/?p=2175](http://www.tmurgent.com/TmBlog/?p=2175)
 

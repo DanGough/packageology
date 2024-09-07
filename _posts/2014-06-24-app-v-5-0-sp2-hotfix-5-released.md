@@ -22,4 +22,4 @@ This release has the following changes:
 * Powershell cmdlets now support -UserSID parameter for running commands as another user from an administrator session
 * PackageStoreAccessControl (PSAC) has been deprecated
 
-Also, this will contain all the changes from [Hotfix 4]({% post_url 2014-05-01-app-v-5-0-sp2-hotfix-4-released %} "App-V 5.0 SP2 Hotfix 4 Released!"), which if you haven't installed yet, you really should!
+Also, this will contain all the changes from [Hotfix 4]({{ site.baseurl }}{% post_url 2014-05-01-app-v-5-0-sp2-hotfix-4-released %} "App-V 5.0 SP2 Hotfix 4 Released!"), which if you haven't installed yet, you really should!

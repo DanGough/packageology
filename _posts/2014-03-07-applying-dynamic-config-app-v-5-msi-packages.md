@@ -12,7 +12,7 @@ tags:
   - App-V
 ---
 
-**There is an updated version of this MST available from [this post]({% post_url 2016-08-14-fix-app-v-sequencer-generated-msi-packages %})**
+**There is an updated version of this MST available from [this post]({{ site.baseurl }}{% post_url 2016-08-14-fix-app-v-sequencer-generated-msi-packages %})**
 {: .notice--warning}
 
 The App-V sequencer produces an MSI package by default as part of its output. This is a wrapper that runs the necessary commands to publish and remove the virtual application. I first assumed that these would usually just be used for test purposes since most places would deploy the App-V native infrastructure or use SCCM, but it turns out a few customers I am working with are using these in a live environment, particularly those using Intune, which does not handle App-V packages natively.

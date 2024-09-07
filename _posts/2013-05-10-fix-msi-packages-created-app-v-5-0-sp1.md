@@ -12,7 +12,7 @@ tags:
   - App-V
 ---
 
-**There is an updated version of this MST available from [this post]({% post_url 2016-08-14-fix-app-v-sequencer-generated-msi-packages %})**
+**There is an updated version of this MST available from [this post]({{ site.baseurl }}{% post_url 2016-08-14-fix-app-v-sequencer-generated-msi-packages %})**
 {: .notice--warning}
 
 So, having just started a project where I get to use App-V 5 outside of the lab environment, this of many posts I plan to make regarding v5, hopefully some of you may find it useful! The MSI packages created by the 5.0 SP1 sequencer refuse to install on the client, showing the following in the MSI log:

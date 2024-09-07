@@ -13,7 +13,7 @@ tags:
   - Java
 ---
 
-Back in [Part 1]({% post_url 2014-02-05-sequencing-java-the-definitive-guide-part-1 %}), we established the reasons for virtualising Java along with best practices for doing so, and in [Part 2]({% post_url 2014-02-06-sequencing-java-the-definitive-guide-part-2 %}), we went over how the new features of App-V 5.0 SP2 can cause problems with this solution.
+Back in [Part 1]({{ site.baseurl }}{% post_url 2014-02-05-sequencing-java-the-definitive-guide-part-1 %}), we established the reasons for virtualising Java along with best practices for doing so, and in [Part 2]({{ site.baseurl }}{% post_url 2014-02-06-sequencing-java-the-definitive-guide-part-2 %}), we went over how the new features of App-V 5.0 SP2 can cause problems with this solution.
 
 The next step is to create either a DSC link or Connection Group between your application and the Java package. Typically the 'application' will be just an Internet Explorer shortcut pointing to specific URL. There is a problem with this approach however. The user will typically not be aware of what is going on under the hood, they just know that for this website to work, they need to use this special start menu shortcut, as it won't work by just typing the URL into their browser. Once the browser has been launched in the virtual environment with an insecure Java version (aren't they all?), there is nothing preventing the user from continuing to use the session for their day-to-day browsing, where they might be unlucky enough to suffer at the hand of one of many exploits in the wild.
 
@@ -24,7 +24,7 @@ You can't rely on the basic isolation that App-V provides as a security blanket 
 3. HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings
 4. HKLM\Software\Microsoft\Windows\CurrentVersion\Internet Settings
 
-Since HKLM\Software\Policies overrides all of the other locations, this is where we should place our configuration settings. All of these locations are ignored by default in App-V 5, so the registry settings on the client need to be reconfigured for this to work. Also, in App-V these settings are ignored if placed in any DSC link child packages, so they must be placed in the main package. See my previous post [Overriding Group Policy Settings With App-V]({% post_url 2014-02-05-overriding-group-policy-settings-app-v %}) for further information about this. There are four default zones configured in Internet Explorer and each is assigned a number:
+Since HKLM\Software\Policies overrides all of the other locations, this is where we should place our configuration settings. All of these locations are ignored by default in App-V 5, so the registry settings on the client need to be reconfigured for this to work. Also, in App-V these settings are ignored if placed in any DSC link child packages, so they must be placed in the main package. See my previous post [Overriding Group Policy Settings With App-V]({{ site.baseurl }}{% post_url 2014-02-05-overriding-group-policy-settings-app-v %}) for further information about this. There are four default zones configured in Internet Explorer and each is assigned a number:
 
 * 0 - My Computer
 * 1 - Local Intranet

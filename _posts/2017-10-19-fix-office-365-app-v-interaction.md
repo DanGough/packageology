@@ -13,7 +13,7 @@ tags:
   - Office
 ---
 
-In my [previous post]({% post_url 2016-08-02-office-365-app-v %}) on this subject, I came to the conclusion that Office 365 apps just wouldn't run in an App-V virtual environment. However there is a fix for this that can be applied to the client registry:
+In my [previous post]({{ site.baseurl }}{% post_url 2016-08-02-office-365-app-v %}) on this subject, I came to the conclusion that Office 365 apps just wouldn't run in an App-V virtual environment. However there is a fix for this that can be applied to the client registry:
 
 {% highlight ini %}
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ClickToRun\OverRide]

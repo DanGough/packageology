@@ -12,7 +12,7 @@ tags:
   - App-V
 ---
 
-In my [previous post]({% post_url 2015-04-22-todays-fixed-app-v-apps %}), I described an issue with an in-house developed app that was unable to connect to it's database when running inside App-V. A few weeks later, different client, different app (Trojan CASPAR), and I encounter the issue again:
+In my [previous post]({{ site.baseurl }}{% post_url 2015-04-22-todays-fixed-app-v-apps %}), I described an issue with an in-house developed app that was unable to connect to it's database when running inside App-V. A few weeks later, different client, different app (Trojan CASPAR), and I encounter the issue again:
 
 [![Error]({{ site.url }}{{ site.baseurl }}/assets/images/2015-07-03-broken-database-connectivity-app-v-apps/Error.png)]({{ site.url }}{{ site.baseurl }}/assets/images/2015-07-03-broken-database-connectivity-app-v-apps/Error.png)
 

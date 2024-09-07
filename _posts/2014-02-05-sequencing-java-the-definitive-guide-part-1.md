@@ -134,7 +134,7 @@ There seems to be a lot of differing advice around regarding how to disable Java
 
 ## Sequencing Recipe For Java Runtime
 
-*WARNING!* - If sequencing using App-V 5.0 SP2 and plan on using global (i.e. per-machine) publishing, you should read [this post]({% post_url 2014-02-06-sequencing-java-the-definitive-guide-part-2 %}) first and consider creating the sequence using SP1 instead! If Java is sequenced on a 32-bit machine it will work on 64-bit, but it will not be usable on 32-bit if sequenced on a 64-bit machine. I recommend using Windows 7 32-bit to create these packages if portability between 32/64-bit is desirable.
+*WARNING!* - If sequencing using App-V 5.0 SP2 and plan on using global (i.e. per-machine) publishing, you should read [this post]({{ site.baseurl }}{% post_url 2014-02-06-sequencing-java-the-definitive-guide-part-2 %}) first and consider creating the sequence using SP1 instead! If Java is sequenced on a 32-bit machine it will work on 64-bit, but it will not be usable on 32-bit if sequenced on a 64-bit machine. I recommend using Windows 7 32-bit to create these packages if portability between 32/64-bit is desirable.
 
 ## Pre-Sequencing Steps
 
@@ -259,4 +259,4 @@ A shortcut is added by default when adding a new application, so this should be 
 
 If sequencing Java 7u10 or above and you have set the registry keys to suppress the update prompt, remember do not launch the Java Control Panel as it will erase those settings!
 
-[Click here to continue to Part 2!]({% post_url 2014-02-06-sequencing-java-the-definitive-guide-part-2 %})
+[Click here to continue to Part 2!]({{ site.baseurl }}{% post_url 2014-02-06-sequencing-java-the-definitive-guide-part-2 %})

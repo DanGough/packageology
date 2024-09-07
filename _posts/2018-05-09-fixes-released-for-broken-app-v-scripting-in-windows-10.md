@@ -19,7 +19,7 @@ Microsoft were kind enough to break App-V scripting in April's updates:
 
 [https://blogs.msdn.microsoft.com/sgern/2018/04/12/april-2018-rollup-for-windows-10-und-server-2016-last-app-v-scripts-nicht-mehr-starten/](https://blogs.msdn.microsoft.com/sgern/2018/04/12/april-2018-rollup-for-windows-10-und-server-2016-last-app-v-scripts-nicht-mehr-starten/)
 
-Thankfully enough customers made a fuss about this that it has been fixed in May's updates! App-V bugs don't get fixed very often and we usually have to just live with them ([ahem!]({% post_url 2014-03-25-user-scripts-broken-app-v-5-0-sp2-local-accounts %})), so this is quite a treat!
+Thankfully enough customers made a fuss about this that it has been fixed in May's updates! App-V bugs don't get fixed very often and we usually have to just live with them ([ahem!]({{ site.baseurl }}{% post_url 2014-03-25-user-scripts-broken-app-v-5-0-sp2-local-accounts %})), so this is quite a treat!
 
 Download links are available here:
 

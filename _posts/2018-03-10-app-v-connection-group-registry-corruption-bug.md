@@ -13,7 +13,7 @@ tags:
   - Hotfix
 ---
 
-The [latest patches]({% post_url 2018-03-10-app-v-hotfixes %}) for App-V contain this in the list of fixed issues:
+The [latest patches]({{ site.baseurl }}{% post_url 2018-03-10-app-v-hotfixes %}) for App-V contain this in the list of fixed issues:
 
 * Addresses an issue in which the user's hive data in the registry isn't maintained correctly when some App-V packages belong to the connection group.
 

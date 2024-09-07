@@ -46,4 +46,4 @@ However, my application had an app path I wished to keep so I just commented out
 </Extension-->
 {% endhighlight %}
 
-Remember these config files are not used by default when either publishing from the App-V Mangement Server or installing from the MSI so they will need to be specified. If you are using the MSI packages I have a solution to import the config files over [here]({% post_url 2014-03-07-applying-dynamic-config-app-v-5-msi-packages %} "Applying Dynamic Config To App-V 5 MSI Packages").
+Remember these config files are not used by default when either publishing from the App-V Mangement Server or installing from the MSI so they will need to be specified. If you are using the MSI packages I have a solution to import the config files over [here]({{ site.baseurl }}{% post_url 2014-03-07-applying-dynamic-config-app-v-5-msi-packages %} "Applying Dynamic Config To App-V 5 MSI Packages").

@@ -68,7 +68,7 @@ Then on each successive run the script can find the files both times:
 
 [![Second run]({{ site.url }}{{ site.baseurl }}/assets/images/2013-06-15-app-v-legacy-ntfs-junctions/secondrun.png)]({{ site.url }}{{ site.baseurl }}/assets/images/2013-06-15-app-v-legacy-ntfs-junctions/secondrun.png)
 
-Now, create an App-V package containing this batch file along with a shortcut to it, and run it at least once during capture. On App-V 5, you will also have to craft your shortcut to run `cmd.exe /c <path to batch file>`, since shortcuts directly to batch files run outside of the virtual environment by default (see [here]({% post_url 2013-06-03-launching-reg-bat-cmd-vbs-files-app-v-5 %}) for a previous post detailing this).
+Now, create an App-V package containing this batch file along with a shortcut to it, and run it at least once during capture. On App-V 5, you will also have to craft your shortcut to run `cmd.exe /c <path to batch file>`, since shortcuts directly to batch files run outside of the virtual environment by default (see [here]({{ site.baseurl }}{% post_url 2013-06-03-launching-reg-bat-cmd-vbs-files-app-v-5 %}) for a previous post detailing this).
 
 Because of the redirection via those NTFS junctions, the files would end up captured in the package under **%PROGRAMDATA%\Test** and **%APPDATA%\Test**. However, when you run the resulting published virtual shortcut, it won't be able to find the files and will create them *outside of the virtual environment*. It appears that the VFS redirection only intercepts calls directly to %PROGRAMDATA% and %APPDATA% locations, but ignores any attempts to access those legacy paths.
 

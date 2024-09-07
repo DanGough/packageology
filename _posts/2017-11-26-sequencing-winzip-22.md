@@ -13,13 +13,13 @@ tags:
   - WinZip
 ---
 
-As demonstrated in my [previous article,]({% post_url 2017-11-26-demystifying-pvad %}) older versions of WinZip had issues with App-V 5, requiring you to either install to the PVAD or hack the registry to get it to run. WinZip fixed this at some point during the last couple of years, however I attempted the latest version 22 when writing that article only to find it fail in a completely different way! Try a standard sequence and select the option to edit the resulting capture before saving, and you will see this:
+As demonstrated in my [previous article,]({{ site.baseurl }}{% post_url 2017-11-26-demystifying-pvad %}) older versions of WinZip had issues with App-V 5, requiring you to either install to the PVAD or hack the registry to get it to run. WinZip fixed this at some point during the last couple of years, however I attempted the latest version 22 when writing that article only to find it fail in a completely different way! Try a standard sequence and select the option to edit the resulting capture before saving, and you will see this:
 
 [![Manifest Error]({{ site.url }}{{ site.baseurl }}/assets/images/2017-11-26-sequencing-winzip-22/Manifest-error-1.png)]({{ site.url }}{{ site.baseurl }}/assets/images/2017-11-26-sequencing-winzip-22/Manifest-error-1.png)
 
 > Failed to load virtual services information - Failed to create a manifest instance.
 
-The [last time]({% post_url 2014-08-06-sometimes-fix-crashing-sequencer-imgburn-recipe %}) I hit a similar issue with the sequencer generating an invalid manifest, it crashed out completely, requiring you to choose the quick save option to even get a package out of it that you could even debug. At least now in this Windows 10 1703 sequencer things are handled a little more gracefully.
+The [last time]({{ site.baseurl }}{% post_url 2014-08-06-sometimes-fix-crashing-sequencer-imgburn-recipe %}) I hit a similar issue with the sequencer generating an invalid manifest, it crashed out completely, requiring you to choose the quick save option to even get a package out of it that you could even debug. At least now in this Windows 10 1703 sequencer things are handled a little more gracefully.
 
 However it appears Microsoft have taken one step forward and two steps back here, as the event logs that you could view to identify exactly which section of the manifest was at fault are no longer in Windows 10 1703! I had to try and add this broken package to a Windows 7 machine with App-V 5.1 with the debug logs enabled in order to see the cause in the event viewer:
 

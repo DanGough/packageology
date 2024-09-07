@@ -13,7 +13,7 @@ tags:
   - VMWare
 ---
 
-If you followed [Part 1]({% post_url 2011-11-20-building-an-app-v-lab-part-1-base-image-creation %}) of this series, you should now have a few Sysprepped images with linked clones created from them for all of your required machines. Now comes the task of setting up the network.
+If you followed [Part 1]({{ site.baseurl }}{% post_url 2011-11-20-building-an-app-v-lab-part-1-base-image-creation %}) of this series, you should now have a few Sysprepped images with linked clones created from them for all of your required machines. Now comes the task of setting up the network.
 
 The aim is to set up a virtual network that's isolated from the outside world and from other machines on my home network, yet with each machine being able to communicate with one another and also have internet connectivity. The best way to do this is to put each machine on an internal private network (termed Host-only in VMWare). The domain controller will be on this network but will also have an extra network interface connected to the internet via a VMWare NAT connection, with routing set up so that the server acts as an internet gateway for the other machines. It's best to choose specific VMWare networks for this rather than relying on automatic settings; use VMnet1 as the private host-only LAN connection and VMnet8 as NAT connection with internet access.  Since we will install a DHCP server on the domain controller, we will need to disable the virtual DHCP server that is enabled by default on VMnet1:
 
@@ -50,7 +50,7 @@ Now if you go to one of your other VMs you should now have internet access! Next
 
 Now you should create a couple of domain accounts that you can use across all of the machines, e.g. **testuser** and **testadmin**. When creating the accounts under Active Directory Users and Computers, remember to untick the box 'user must change password on next login' and tick the box for 'password never expires', and add the **testadmin** user to the **Domain Admins** group.
 
-It's also a good idea to [configure the default domain policy to prevent the changing of machine accounts]({% post_url 2011-12-03-preventing-vms-falling-off-the-domain%}), otherwise you may find your machines dropping off the domain when rolling back to old snapshots.
+It's also a good idea to [configure the default domain policy to prevent the changing of machine accounts]({{ site.baseurl }}{% post_url 2011-12-03-preventing-vms-falling-off-the-domain%}), otherwise you may find your machines dropping off the domain when rolling back to old snapshots.
 
 Once you've done these things you can try joining one of your other machines to the domain. If you haven't already done so, it's a good idea to rename the machine to something meaningful as you do this:
 
@@ -58,4 +58,4 @@ Once you've done these things you can try joining one of your other machines to 
 
 It will then prompt for a reboot, after which you can then login with a domain admin account rather than the local administrator. You'll need to do this to all of the other machines in the lab too.
 
-Now that we have the basis for our mini corporate network, click here for [Part 3]({% post_url 2011-11-28-building-app-v-lab-part-3-installing-app-v %}) which covers installing the App-V management server, sequencer and client.
+Now that we have the basis for our mini corporate network, click here for [Part 3]({{ site.baseurl }}{% post_url 2011-11-28-building-app-v-lab-part-3-installing-app-v %}) which covers installing the App-V management server, sequencer and client.

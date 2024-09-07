@@ -111,4 +111,4 @@ This needs to be copied to the C:\Windows\System32\Sysprep folder, then Sysprep 
 
 Once it has shut down, take a snapshot. You can then follow a similar process to create clean Sysprepped images of Windows Server 2008 R2, Windows 7 x86, or whatever you require. Bear in mind that the Server OS won't use the same optimisations as Windows 7, and each will require their own unattend.xml file. Once you have a Sysprepped base image for each OS, you can create your linked clones. I created a Domain Controller and an App-V Management Server from my Windows Server 2008 R2 image, and App-V sequencer and client machines using both 32-bit and 64-bit variants of Windows 7.
 
-Click here for [Part 2]({% post_url 2011-11-21-building-an-app-v-lab-part-2-building-the-network %}) where I cover configuring the domain controller and VMWare networking.
+Click here for [Part 2]({{ site.baseurl }}{% post_url 2011-11-21-building-an-app-v-lab-part-2-building-the-network %}) where I cover configuring the domain controller and VMWare networking.

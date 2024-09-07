@@ -13,7 +13,7 @@ tags:
   - Java
 ---
 
-In [Part 1]({% post_url 2014-02-05-sequencing-java-the-definitive-guide-part-1 %}), I discussed the reasons for virtualising Java along with some of the common problems, with a recipe to ensure the virtual Java instance is suitable isolated from any local installations. This part discusses how the new App-V 5.0 SP2 functionality negatively impacts the usage of virtualised Java plugins in a typical enterprise environment.
+In [Part 1]({{ site.baseurl }}{% post_url 2014-02-05-sequencing-java-the-definitive-guide-part-1 %}), I discussed the reasons for virtualising Java along with some of the common problems, with a recipe to ensure the virtual Java instance is suitable isolated from any local installations. This part discusses how the new App-V 5.0 SP2 functionality negatively impacts the usage of virtualised Java plugins in a typical enterprise environment.
 
 As of SP2, App-V 5.0 handles Browser Helper Objects and ActiveX controls differently - if the package is published globally (i.e. per machine) rather than per user, these components are locally integrated so that the native Explorer and Internet Explorer processes can see them without having to launch these processes inside the virtual environment. On the one hand, this is great new functionality, meaning you can now virtualise your primary instances of Adobe Reader, Flash Player, etc. On the other hand, there is no obvious way of disabling this functionality on a per-package basis. One of the selling points of a virtualisation solution is that you can deploy applications without fear of messing up anything that is locally installed. By beginning to integrate components locally, App-V is beginning to cross over into the dark side!
 
@@ -60,4 +60,4 @@ If you're feeling experimental, some additional (and brutal) workarounds I have 
 
 An additional issue has come about, regarding using App-V 5.0 SP2 & 4.6 on the same machine. Basically, if you had any 4.6 sequences with shortcuts to Internet Explorer, installing 5.0 SP2 breaks them. This is due to the new dynamic virtualisation features, it appears that App-V 5.0 steps in where it isn't wanted and Internet Explorer no longer lanuches in the 4.6 virtual environment. The original post in German from Sebastian Gernert can be found [here](http://blogs.msdn.com/b/sgern/archive/2014/02/04/10496630.aspx), and a translated page [here](http://www.microsofttranslator.com/bv.aspx?from=de&to=en&a=http://blogs.msdn.com/b/sgern/archive/2014/02/04/10496630.aspx).
 
-[Click here to continue to Part 3!]({% post_url 2014-02-26-sequencing-java-the-definitive-guide-part-3 %})
+[Click here to continue to Part 3!]({{ site.baseurl }}{% post_url 2014-02-26-sequencing-java-the-definitive-guide-part-3 %})

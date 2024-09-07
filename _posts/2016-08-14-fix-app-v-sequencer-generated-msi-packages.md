@@ -14,8 +14,8 @@ tags:
 
 As you may know, the App-V sequencer also spits out an old-school MSI package by default as part of its output. These are useful not only if you just want to quickly import a package for testing, but also for those using 3rd party deployment tools or Microsoft Intune to manage their packages. I have previously published a couple of .MST transforms to deal with various issues found in the MSI packages that the App-V sequencer creates:
 
-* [Applying Dynamic Config To App-V 5 MSI Packages]({% post_url 2014-03-07-applying-dynamic-config-app-v-5-msi-packages %})
-* [Fix For MSI Packages Created With App-V 5.0 SP1]({% post_url 2013-05-10-fix-msi-packages-created-app-v-5-0-sp1 %})
+* [Applying Dynamic Config To App-V 5 MSI Packages]({{ site.baseurl }}{% post_url 2014-03-07-applying-dynamic-config-app-v-5-msi-packages %})
+* [Fix For MSI Packages Created With App-V 5.0 SP1]({{ site.baseurl }}{% post_url 2013-05-10-fix-msi-packages-created-app-v-5-0-sp1 %})
 
 The format of these MSIs has changed slightly through the releases:
 
